@@ -142,3 +142,40 @@
     height: auto;
   }
 }
+
+/* Align project panels without changing the original design */
+.dashboard {
+  align-items: stretch;
+}
+
+.dashboard > .featured-panel,
+.dashboard > #more-projects {
+  align-self: stretch;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.dashboard > .featured-panel:not(#more-projects) {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard > .featured-panel:not(#more-projects) > .panel-foot {
+  margin-top: auto;
+}
+
+#more-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#more-projects > .panel-foot {
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .dashboard > .featured-panel,
+  .dashboard > #more-projects {
+    height: auto;
+  }
+}
