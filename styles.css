@@ -179,3 +179,28 @@
     height: auto;
   }
 }
+
+/* Project panel alignment — preserve original styling */
+.dashboard {
+  align-items: stretch;
+}
+
+.dashboard > article.panel {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.dashboard > article.panel.featured-panel:not(#more-projects) {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard > article.panel#more-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard > article.panel.featured-panel:not(#more-projects) > .panel-foot,
+.dashboard > article.panel#more-projects > .panel-foot {
+  margin-top: auto;
+}
