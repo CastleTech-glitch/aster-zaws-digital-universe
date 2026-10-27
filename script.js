@@ -1,6 +1,6 @@
 // Customize these links before publishing. Keep secrets and API keys out of this file.
 const SITE_CONFIG = {
-  telegramBotUrl: "https://t.me/",
+  telegramBotUrl: "https://t.me/GeniusExcelFormulaBot",
   socialLinks: {
     youtube: "#",
     tiktok: "#",
